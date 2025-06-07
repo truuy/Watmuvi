@@ -1,0 +1,33 @@
+.about-photo {
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  display: block;
+}
+.photo-wrapper {
+  position: relative;
+  margin-bottom: 16px;
+  width: 120px;
+  height: 120px;
+}
+.so-handsome-text {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  color: #020202;
+  font-weight: 600;
+  text-shadow: 0 1px 4px #fff, 0 1px 8px #fff;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.photo-wrapper:hover .about-photo {
+  transform: scale(1.5); /* increased zoom */
+  box-shadow: 0 12px 36px rgba(0,0,0,0.22);
+  z-index: 2;
+}
+.photo-wrapper:hover .so-handsome-text {
+  opacity: 1;
+}

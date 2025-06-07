@@ -1,0 +1,16 @@
+.movie-card-zoom {
+    transition: transform 0.2s cubic-bezier(.4, 2, .6, 1), box-shadow 0.2s;
+    will-change: transform;
+}
+
+.movie-card-zoom:hover {
+    transform: scale(1.06);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.move-up-btn:hover {
+  background: #222 !important;
+  color: #fff !important;
+}
